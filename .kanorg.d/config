@@ -1,5 +1,5 @@
-backlog = []
+backlog = [6, 5]
 todo = []
-doing = [3]
-done = [2, 1]
-last_task = 3
+doing = [4]
+done = [3, 2, 1]
+last_task = 6

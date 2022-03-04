@@ -22,8 +22,9 @@ from diario_alimentar import views as diarioViews# new
 router = routers.DefaultRouter()
 router.register(r'ListaAlimento', views.ListaComidaView, 'comida')
 router.register(r'DiarioAlimentar', diarioViews.DiarioAlimentarView, 'diario_alimentar')
+router.register(r'CaloriasDia', diarioViews.CaloriasTotaisView, 'calorias_do_dia')
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('api/', include(router.urls)),
+    path('', include(router.urls)),
 ]

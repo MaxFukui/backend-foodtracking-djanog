@@ -1,5 +1,6 @@
 from django.db import models
 from mongoengine import *
+from datetime import date
 connect("projeto_calorias")
 # Create your models here.
 class ListaComida(Document):
